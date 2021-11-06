@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   } // Promo slider init & options
 
 
-  var swiper = new Swiper('.promo__slider', {
+  var promoSlider = new Swiper('.promo__slider', {
     autoHeight: true,
     loop: true,
     pagination: {
@@ -29,6 +29,29 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    }
+  }); // Help slider init & options
+
+  var helpSlider = new Swiper('.help-block__slider .swiper', {
+    loop: true,
+    perMove: 1,
+    slidesPerView: 2,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: '.help-block__next',
+      prevEl: '.help-block__prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      },
+      1024: {
+        slidesPerView: 4
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 25
+      }
     }
   }); // Embed youtube videos the right way
 
