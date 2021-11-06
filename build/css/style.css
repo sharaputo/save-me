@@ -613,6 +613,8 @@ body {
 
 .ibg {
   position: relative;
+  height: 0;
+  overflow: hidden;
 }
 
 .ibg img {
@@ -656,6 +658,14 @@ body {
 
 .section-padding {
   padding: 24px 0;
+}
+
+.section-title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #252120;
 }
 
 .shadow-black {
@@ -711,6 +721,7 @@ body {
 }
 
 .button--secondary {
+  font-size: 1.6rem;
   color: #f34056;
   background-color: #ffffff;
   border: 1px solid #f34056;
@@ -803,6 +814,188 @@ body {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+
+.child-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
+}
+
+.child-card--highlighted {
+  position: relative;
+  border: 3px solid #9366c5;
+}
+
+.child-card--highlighted::before {
+  display: block;
+  position: absolute;
+  top: -38px;
+  right: -15px;
+  content: '';
+  width: 115px;
+  height: 116px;
+  background-image: url(../../img/heart.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.child-card__header {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.child-card__image {
+  padding-bottom: 63%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.child-card__icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.77);
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.child-card__urgent {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background-color: #f34056;
+  padding: 8px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.child-card__urgent .label {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.child-card__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 2px;
+}
+
+.child-card__subtitle {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  color: #252120;
+}
+
+.child-card__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.child-card__goal {
+  background-color: #fff8f3;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.child-card__info + .child-card__info {
+  margin-top: 16px;
+}
+
+.child-card__info.required {
+  margin-bottom: auto;
+}
+
+.child-card__info .label {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #8a8989;
+}
+
+.child-card__info .text {
+  font-size: 1.7rem;
+}
+
+.child-card__help-link {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.child-card .goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.child-card .goal__raised {
+  text-align: right;
+}
+
+.child-card .goal .label {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #8a8989;
+}
+
+.child-card .goal .sum {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.child-card .progress {
+  position: relative;
+  height: 6px;
+  background-color: #ffe6d8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.child-card .progress__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-color: #ffab7c;
+  border-radius: 4px;
+  z-index: 2;
 }
 
 .input {
@@ -1062,7 +1255,7 @@ body {
   border-radius: 16px;
 }
 
-/* Sections Styles */
+/* Promo Styles */
 
 .promo {
   padding: 24px 0 48px;
@@ -1095,6 +1288,26 @@ body {
   font-size: 17px;
   color: #252120;
   margin-bottom: 24px;
+}
+
+.need-help__title {
+  margin-bottom: 24px;
+}
+
+.need-help__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.need-help__btn {
+  max-width: 192px;
+  margin: 24px auto 0;
 }
 
 /* Footer Styles */
@@ -1371,6 +1584,10 @@ body {
     padding: 48px 0;
   }
 
+  .section-title {
+    font-size: 36px;
+  }
+
   .header {
     padding: 24px 0 8px;
   }
@@ -1500,6 +1717,39 @@ body {
         flex-basis: 494px;
   }
 
+  .need-help__title {
+    margin-bottom: 32px;
+  }
+
+  .need-help__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
+    row-gap: 40px;
+  }
+
+  .need-help__btn {
+    margin-top: 32px;
+  }
+
+  .need-help .child-card {
+    max-width: 349px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+
   .footer__top {
     padding: 48px 0;
   }
@@ -1533,6 +1783,10 @@ body {
     max-width: 1100px;
   }
 
+  .child-card__title {
+    font-size: 2.4rem;
+  }
+
   .header .menu {
     gap: 32px;
   }
@@ -1548,6 +1802,20 @@ body {
 
   .promo .swiper-pagination {
     bottom: 32px;
+  }
+
+  .need-help__title {
+    margin-bottom: 48px;
+  }
+
+  .need-help__cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .need-help__btn {
+    margin-top: 48px;
   }
 
   .footer__links {
