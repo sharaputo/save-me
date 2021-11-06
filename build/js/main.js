@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Burger menu handling
   var burgerIcon = document.querySelector('.burger');
   var headerMenu = document.querySelector('#navigation');
 
@@ -15,5 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
         bodyScrollLock.enableBodyScroll(headerMenu);
       }
     });
-  }
+  } // Promo slider init & options
+
+
+  var swiper = new Swiper('.promo__slider', {
+    autoHeight: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
 });
