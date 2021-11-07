@@ -206,7 +206,6 @@ textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 0;
 }
 
 input[type='checkbox'],
@@ -427,7 +426,7 @@ body {
 
 .hystmodal__window {
   width: auto;
-  max-width: 623px;
+  max-width: 412px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -451,13 +450,40 @@ body {
 }
 
 .hystmodal__close {
-  display: block;
+  display: grid;
+  place-items: center;
   position: absolute;
-  top: 29px;
-  right: 29px;
+  top: 0;
+  right: 0;
   width: 72px;
   height: 72px;
+  cursor: pointer;
   z-index: 10;
+}
+
+.hystmodal__close::before,
+.hystmodal__close::after {
+  position: relative;
+  display: block;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: #dddddd;
+  border-radius: 2px;
+}
+
+.hystmodal__close::before {
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hystmodal__close::after {
+  bottom: 18px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .swiper {
@@ -790,8 +816,8 @@ body {
   top: 0;
   left: 0;
   content: '';
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #55504f;
   border-radius: 3px;
   -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -802,11 +828,11 @@ body {
 .checkbox-control::after {
   display: block;
   position: absolute;
-  top: 3px;
-  left: 2px;
+  top: 0;
+  left: 0;
   content: '';
-  height: 9px;
-  width: 12px;
+  height: 11px;
+  width: 8px;
   opacity: 0;
   border-bottom: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
@@ -1004,6 +1030,7 @@ body {
 }
 
 .input {
+  width: 100%;
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.8rem;
   line-height: 1.3;
@@ -1011,9 +1038,9 @@ body {
   padding: 16px 24px;
   border: 1px solid #afafaf;
   border-radius: 16px;
-  -webkit-transition: border 0.3s ease-in-out;
-  -o-transition: border 0.3s ease-in-out;
-  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.1s ease-in-out;
+  -o-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
 }
 
 .input::-webkit-input-placeholder {
@@ -1627,6 +1654,95 @@ body {
   display: none;
 }
 
+.help-popup {
+  position: relative;
+  background-color: #ffffff;
+  padding: 32px 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
+}
+
+.help-popup__icon {
+  max-width: 75px;
+  margin-bottom: 24px;
+}
+
+.help-popup__icon img {
+  display: block;
+  -webkit-filter: drop-shadow(5px 15px 15px rgba(243, 64, 86, 0.48));
+          filter: drop-shadow(5px 15px 15px rgba(243, 64, 86, 0.48));
+}
+
+.help-popup__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 24px;
+}
+
+.help-popup__info {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.help-popup .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.help-popup .form__input--labeled {
+  position: relative;
+}
+
+.help-popup .form__label {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #afafaf;
+}
+
+.help-popup .form__label--absolute {
+  position: absolute;
+  top: calc(50% - 11px);
+  right: 24px;
+}
+
+.help-popup .form__policy {
+  position: relative;
+}
+
+.help-popup .form__link {
+  color: #f34056;
+}
+
+.help-popup .form__btn {
+  margin-top: 24px;
+}
+
+.help-popup .form .label {
+  font-size: 1.6rem;
+  color: #252120;
+  padding-left: 33px;
+}
+
+.help-popup .form .label::before {
+  top: calc(50% - 9px);
+}
+
+.help-popup .form .label::after {
+  top: calc(50% - 7px);
+  left: 5px;
+}
+
 /* Footer Styles */
 
 .footer {
@@ -1896,6 +2012,10 @@ body {
   .main {
     background-image: url(../img/main-bg.jpg);
     padding-top: 77px;
+  }
+
+  .hystmodal__window {
+    max-width: 623px;
   }
 
   .container {
@@ -2246,6 +2366,27 @@ body {
   .help-block .swiper-button-prev,
   .help-block .swiper-button-next {
     display: grid;
+  }
+
+  .help-popup {
+    padding: 64px 32px;
+  }
+
+  .help-popup__title {
+    font-size: 3.6rem;
+  }
+
+  .help-popup .form__inputs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .help-popup .form__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 
   .footer__top {

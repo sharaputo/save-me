@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Burger menu handling
+  // Burger menu open & close
   var burgerIcon = document.querySelector('.burger');
   var headerMenu = document.querySelector('#navigation');
 
@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
         bodyScrollLock.enableBodyScroll(headerMenu);
       }
     });
-  } // Promo slider init & options
+  } // Help popup open & close
 
+
+  var popups = new HystModal({
+    linkAttributeName: 'data-hystmodal'
+  }); // Promo slider init & options
 
   var promoSlider = new Swiper('.promo__slider', {
     autoHeight: true,
