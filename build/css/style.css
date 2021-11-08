@@ -672,6 +672,13 @@ body {
   hyphens: auto;
 }
 
+.page-title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #252120;
+}
+
 .screen-reader {
   position: absolute;
   width: 1px;
@@ -712,6 +719,25 @@ body {
 }
 
 /* Components */
+
+.breadcrumb__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+
+.breadcrumb__item {
+  list-style: none;
+}
+
+.breadcrumb__link {
+  color: #252120;
+}
+
+.breadcrumb__link--current {
+  color: #dddddd;
+}
 
 .button {
   display: block;
@@ -2011,6 +2037,9 @@ body {
 @media only screen and (min-width: 1024px) {
   .main {
     background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
     padding-top: 77px;
   }
 
@@ -2022,12 +2051,20 @@ body {
     max-width: 960px;
   }
 
+  .page-title {
+    font-size: 3.6rem;
+  }
+
   .section-padding {
     padding: 48px 0;
   }
 
   .section-title {
     font-size: 36px;
+  }
+
+  .breadcrumb__link {
+    font-size: 1.8rem;
   }
 
   .news-card__image {
