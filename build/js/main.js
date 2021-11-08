@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var popups = new HystModal({
     linkAttributeName: 'data-hystmodal'
-  }); // Promo slider init & options
+  }); // Dynamic relocation of elements on resize
+
+  var dynamicAdaptElements = new DynamicAdapt('min');
+  dynamicAdaptElements.init(); // Promo slider init & options
 
   var promoSlider = new Swiper('.promo__slider', {
     autoHeight: true,
