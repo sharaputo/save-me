@@ -60,6 +60,28 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 25
       }
     }
+  }); // Child-page slider
+
+  var sliderThumbs = new Swiper('.slider__thumbs', {
+    spaceBetween: 16,
+    slidesPerView: 3.6,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      1440: {
+        slidesPerView: 3
+      }
+    }
+  });
+  var sliderMain = new Swiper('.slider__main', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: sliderThumbs
+    }
   }); // Embed youtube videos the right way
 
   function embedYoutube() {
