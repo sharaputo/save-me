@@ -628,8 +628,12 @@ body {
 /* Helpers */
 
 .card {
+  position: relative;
+  background-color: #ffffff;
   padding: 16px;
   border-radius: 16px;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
 }
 
 .container {
@@ -2042,51 +2046,43 @@ body {
   display: none;
 }
 
-.child-section .aside {
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.07);
-}
-
-.child-section .aside__title {
+.child-section .child-aside__title {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   color: #252120;
 }
 
-.child-section .aside__age {
+.child-section .child-aside__age {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.6rem;
   color: #252120;
   margin-bottom: 16px;
 }
 
-.child-section .aside__info {
+.child-section .child-aside__info {
   margin-bottom: 16px;
 }
 
-.child-section .aside__docs {
+.child-section .child-aside__docs {
   margin-bottom: 16px;
 }
 
-.child-section .aside__btn {
+.child-section .child-aside__btn {
   margin-top: 16px;
 }
 
-.child-section .aside .label {
+.child-section .child-aside .label {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.2rem;
   color: #8a8989;
 }
 
-.child-section .aside .text {
+.child-section .child-aside .text {
   font-size: 1.7rem;
 }
 
-.child-section .aside .docs {
+.child-section .child-aside .docs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2094,7 +2090,7 @@ body {
   margin-top: 8px;
 }
 
-.child-section .aside .docs__link {
+.child-section .child-aside .docs__link {
   color: #55504f;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -2107,7 +2103,7 @@ body {
   gap: 10px;
 }
 
-.child-section .aside .goal {
+.child-section .child-aside .goal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2117,22 +2113,22 @@ body {
   margin-bottom: 4px;
 }
 
-.child-section .aside .goal__raised {
+.child-section .child-aside .goal__raised {
   text-align: right;
 }
 
-.child-section .aside .goal .label {
+.child-section .child-aside .goal .label {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.2rem;
   color: #8a8989;
 }
 
-.child-section .aside .goal .sum {
+.child-section .child-aside .goal .sum {
   font-size: 1.7rem;
   line-height: 1.1;
 }
 
-.child-section .aside .progress {
+.child-section .child-aside .progress {
   position: relative;
   height: 6px;
   background-color: #ffe6d8;
@@ -2140,7 +2136,7 @@ body {
   overflow: hidden;
 }
 
-.child-section .aside .progress__bar {
+.child-section .child-aside .progress__bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -2148,6 +2144,22 @@ body {
   background-color: #ffab7c;
   border-radius: 4px;
   z-index: 2;
+}
+
+.child-story {
+  padding: 24px 0;
+}
+
+.child-story__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 8px;
+}
+
+.child-story p {
+  margin-bottom: 32px;
 }
 
 /* Footer Styles */
@@ -2929,6 +2941,23 @@ body {
         flex-basis: 560px;
   }
 
+  .child-story__body {
+    max-width: 560px;
+  }
+
+  .child-story__title {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+  }
+
+  .child-story__title--secondary {
+    margin-bottom: 32px;
+  }
+
+  .child-story p {
+    font-size: 1.7rem;
+  }
+
   .footer__top {
     padding: 48px 0;
   }
@@ -3076,8 +3105,12 @@ body {
         flex-basis: 635px;
   }
 
-  .child-section .aside__title {
+  .child-section .child-aside__title {
     font-size: 3.6rem;
+  }
+
+  .child-story__body {
+    max-width: 635px;
   }
 
   .footer__links {
