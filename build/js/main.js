@@ -82,7 +82,33 @@ document.addEventListener('DOMContentLoaded', function () {
     thumbs: {
       swiper: sliderThumbs
     }
-  }); // Embed youtube videos the right way
+  }); // Payment tabs logic
+
+  var paymentTabs = document.querySelectorAll('.tabs-block__link');
+  paymentTabs.forEach(function (tab) {
+    tab.addEventListener('click', tabClicks);
+  });
+
+  function tabClicks(tabClickEvent) {
+    for (var i = 0; i < paymentTabs.length; i++) {
+      paymentTabs[i].classList.remove('_active');
+    }
+
+    var clickedTab = tabClickEvent.currentTarget;
+    clickedTab.classList.add('_active');
+    tabClickEvent.preventDefault();
+    var tabPanels = document.querySelectorAll('.tabs-block__panel');
+
+    for (var _i = 0; _i < tabPanels.length; _i++) {
+      tabPanels[_i].classList.remove('_active');
+    }
+
+    var anchorReference = tabClickEvent.target;
+    var activePanelId = anchorReference.getAttribute('href');
+    var activePanel = document.querySelector(activePanelId);
+    activePanel.classList.add('_active');
+  } // Embed youtube videos the right way
+
 
   function embedYoutube() {
     var youtubeContainers = document.querySelectorAll('.embed-youtube');

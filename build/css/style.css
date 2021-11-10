@@ -1456,7 +1456,7 @@ body {
       flex-shrink: 0;
   -ms-flex-preferred-size: 106px;
       flex-basis: 106px;
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .header .menu {
@@ -1510,6 +1510,7 @@ body {
 .header .main-menu__link {
   font-size: 18px;
   font-weight: 700;
+  white-space: nowrap;
   color: #252120;
 }
 
@@ -1532,6 +1533,7 @@ body {
 
 .header .secondary-menu__link {
   font-size: 18px;
+  white-space: nowrap;
   color: #8a8989;
 }
 
@@ -1544,6 +1546,7 @@ body {
 .header .phone__link {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 24px;
+  white-space: nowrap;
   color: #252120;
 }
 
@@ -1558,6 +1561,7 @@ body {
   padding: 4px 12px;
   border: 1px solid #ffab7c;
   border-radius: 16px;
+  margin-left: auto;
 }
 
 /* Promo Styles */
@@ -2162,6 +2166,305 @@ body {
   margin-bottom: 32px;
 }
 
+.payments-section {
+  padding: 24px 0;
+}
+
+.payments-section .tabs {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 15px 30px rgba(243, 64, 86, 0.2);
+          box-shadow: 0px 15px 30px rgba(243, 64, 86, 0.2);
+}
+
+.payments-section .tabs__image {
+  display: none;
+}
+
+.payments-section .tabs__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 4px;
+}
+
+.payments-section .tabs__label {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.2rem;
+  color: #8a8989;
+}
+
+.payments-section .tabs-block {
+  margin-top: 32px;
+}
+
+.payments-section .tabs-block__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.payments-section .tabs-block__link {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #8a8989;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+  padding-bottom: 4px;
+  -webkit-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+.payments-section .tabs-block__link::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.payments-section .tabs-block__link._active {
+  color: #252120;
+}
+
+.payments-section .tabs-block__link._active::after {
+  background-color: #f34056;
+}
+
+.payments-section .tabs-block__panel {
+  display: none;
+}
+
+.payments-section .tabs-block__panel._active {
+  display: block;
+}
+
+.payments-section .tabs-block .online__step {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.payments-section .tabs-block .online__step + .online__step {
+  margin-top: 32px;
+}
+
+.payments-section .tabs-block .online__options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.payments-section .tabs-block .online__option {
+  position: relative;
+}
+
+.payments-section .tabs-block .online__option .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  padding: 4px 6px;
+  outline: 1px solid #dddddd;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.payments-section .tabs-block .online__option .label span {
+  width: 51px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+
+.payments-section .tabs-block .online__option .radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.payments-section .tabs-block .online__option .radio:checked + .label {
+  background-color: #fff8f3;
+  outline-width: 2px;
+  outline-color: #ffab7c;
+}
+
+.payments-section .tabs-block .online__policy {
+  position: relative;
+  margin-top: 32px;
+}
+
+.payments-section .tabs-block .online__policy .wrapper {
+  padding: 5px 0 5px 3px;
+}
+
+.payments-section .tabs-block .online__policy .label {
+  font-size: 1.2rem;
+  color: #252120;
+  padding-left: 30px;
+}
+
+.payments-section .tabs-block .online__policy .label::before {
+  top: 6px;
+}
+
+.payments-section .tabs-block .online__policy .label::after {
+  top: 7px;
+  left: 5px;
+}
+
+.payments-section .tabs-block .online__policy .link {
+  color: #f34056;
+}
+
+.payments-section .tabs-block .online__btn {
+  margin-top: 16px;
+}
+
+.payments-section .tabs-block .online .number {
+  height: 34px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 34px;
+      flex-basis: 34px;
+  display: grid;
+  place-items: center;
+  color: #ffab7c;
+  background-color: #fff8f3;
+  border-radius: 8px;
+}
+
+.payments-section .tabs-block .sms__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #252120;
+  margin-bottom: 16px;
+}
+
+.payments-section .tabs-block .sms__title .highlight {
+  color: #f34056;
+}
+
+.payments-section .tabs-block .sms__info {
+  font-size: 1.7rem;
+  margin-bottom: 24px;
+}
+
+.payments-section .tabs-block .sms .link {
+  color: #f34056;
+}
+
+.payments-section .tabs-block .sms .age-restriction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.payments-section .tabs-block .sms .age {
+  height: 32px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 32px;
+      flex-basis: 32px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #fff8f3;
+  background-color: #9b51e0;
+  border-radius: 50%;
+}
+
+.payments-section .tabs-block .sms .label {
+  font-size: 1.7rem;
+}
+
+.payments-section .tabs-block .sms .warning {
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+.payments-section .tabs-block .account__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.6rem;
+  color: #252120;
+  margin-bottom: 16px;
+}
+
+.payments-section .tabs-block .account__subtitle {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.payments-section .tabs-block .account__subtitle .highlight {
+  color: #ffab7c;
+}
+
+.payments-section .tabs-block .account__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  color: #55504f;
+}
+
+.payments-section .tabs-block .account__link + .account__title {
+  margin-top: 32px;
+}
+
+.payments-section .tabs-block .account__link + .account__subtitle {
+  margin-top: 16px;
+}
+
+.payments-section .tabs-block .account__warning {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin-top: 24px;
+}
+
 /* Footer Styles */
 
 .footer {
@@ -2412,6 +2715,10 @@ body {
     margin: 24px auto 0;
   }
 
+  .payments-section .tabs-block .online__option .label {
+    padding: 16px;
+  }
+
   .footer__bottom .social-links {
     margin-bottom: 0;
   }
@@ -2567,14 +2874,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     gap: 24px;
     padding: 0;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
+    overflow: visible;
   }
 
   .header .main-menu__link {
@@ -2582,11 +2893,16 @@ body {
   }
 
   .header .main-menu {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 15px;
+    gap: 12px;
   }
 
   .header .secondary-menu__link {
@@ -2594,11 +2910,16 @@ body {
   }
 
   .header .secondary-menu {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 15px;
+    gap: 12px;
   }
 
   .header .phone__label {
@@ -2610,6 +2931,11 @@ body {
   }
 
   .header .phone {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     text-align: right;
   }
 
@@ -2958,6 +3284,114 @@ body {
     font-size: 1.7rem;
   }
 
+  .payments-section .tabs__image {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 456px;
+        flex-basis: 456px;
+    padding-bottom: 60.8%;
+    border-radius: 16px;
+  }
+
+  .payments-section .tabs__body {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .payments-section .tabs__title {
+    font-size: 3.2rem;
+  }
+
+  .payments-section .tabs__info {
+    font-size: 1.7rem;
+  }
+
+  .payments-section .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+  }
+
+  .payments-section .tabs-block__panels {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .payments-section .tabs-block__panel {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  .payments-section .tabs-block .sms__warning {
+    margin-top: auto;
+  }
+
+  .payments-section .tabs-block .sms {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .payments-section .tabs-block .account__title {
+    font-size: 1.8rem;
+  }
+
+  .payments-section .tabs-block .account__warning {
+    margin-top: auto;
+  }
+
+  .payments-section .tabs-block .account {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .payments-section .tabs-block {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .footer__top {
     padding: 48px 0;
   }
@@ -3111,6 +3545,27 @@ body {
 
   .child-story__body {
     max-width: 635px;
+  }
+
+  .payments-section .tabs-block .online__policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+  }
+
+  .payments-section .tabs-block .online__btn {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 254px;
+        flex-basis: 254px;
+    margin-top: 0;
   }
 
   .footer__links {
