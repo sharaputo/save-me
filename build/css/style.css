@@ -2521,6 +2521,28 @@ body {
   color: #55504f;
 }
 
+.more-help {
+  padding: 24px 0 48px;
+}
+
+.more-help__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 16px;
+}
+
+.more-help__cards {
+  display: grid;
+  gap: 16px;
+}
+
+.more-help__btn {
+  max-width: 154px;
+  margin: 24px auto 0;
+}
+
 /* Footer Styles */
 
 .footer {
@@ -3470,6 +3492,22 @@ body {
     padding: 24px 0;
   }
 
+  .more-help {
+    padding-bottom: 75px;
+  }
+
+  .more-help__title {
+    font-size: 2.8rem;
+  }
+
+  .more-help__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more-help__btn {
+    display: none;
+  }
+
   .footer__top {
     padding: 48px 0;
   }
@@ -3644,6 +3682,11 @@ body {
     -ms-flex-preferred-size: 254px;
         flex-basis: 254px;
     margin-top: 0;
+  }
+
+  .more-help__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 
   .footer__links {
