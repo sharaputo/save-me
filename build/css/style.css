@@ -2162,8 +2162,25 @@ body {
   margin-bottom: 8px;
 }
 
-.child-story p {
-  margin-bottom: 32px;
+.child-story__blockquote {
+  position: relative;
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff8f3;
+  padding: 32px;
+  border-radius: 16px;
+  margin-top: 45px;
+  margin-bottom: 24px;
+}
+
+.child-story__blockquote .icon {
+  position: absolute;
+  top: -21px;
+  left: 16px;
+}
+
+.child-story p + .child-story__title {
+  margin-top: 32px;
 }
 
 .payments-section {
@@ -3355,6 +3372,12 @@ body {
   }
 
   .child-story__title--secondary {
+    margin-bottom: 32px;
+  }
+
+  .child-story__blockquote {
+    font-size: 1.7rem;
+    margin-top: 37px;
     margin-bottom: 32px;
   }
 
