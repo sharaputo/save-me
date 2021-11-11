@@ -82,6 +82,16 @@ document.addEventListener('DOMContentLoaded', function () {
     thumbs: {
       swiper: sliderThumbs
     }
+  }); // News menu slider
+
+  var menuSlider = new Swiper('.aside-menu__slider', {
+    perMove: 1,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.aside-menu__next',
+      prevEl: '.aside-menu__prev'
+    }
   }); // Payment tabs logic
 
   var paymentTabs = document.querySelectorAll('.tabs-block__link');

@@ -1351,7 +1351,7 @@ body {
   z-index: 2;
 }
 
-/* Header Styles */
+/* Header  */
 
 .header {
   position: fixed;
@@ -1564,7 +1564,7 @@ body {
   margin-left: auto;
 }
 
-/* Promo Styles */
+/* Promo */
 
 .promo {
   padding: 24px 0 48px;
@@ -1955,7 +1955,7 @@ body {
   margin-top: 24px;
 }
 
-/* Help Page Styles */
+/* Help Page */
 
 .help-page {
   padding: 24px 0 48px;
@@ -1989,7 +1989,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* Child Page Styles */
+/* Child Page */
 
 .child-section {
   padding: 24px 0;
@@ -2560,7 +2560,9 @@ body {
   margin: 24px auto 0;
 }
 
-/* Footer Styles */
+/* News Page */
+
+/* Footer  */
 
 .footer {
   margin-top: auto;
