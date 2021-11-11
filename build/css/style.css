@@ -2503,6 +2503,10 @@ body {
       flex-basis: 219px;
 }
 
+.child-news__card .news-link {
+  display: block;
+}
+
 .child-news__card .date {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.2rem;
@@ -2514,6 +2518,7 @@ body {
   font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+  color: #55504f;
 }
 
 /* Footer Styles */
