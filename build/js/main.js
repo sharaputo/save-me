@@ -24,7 +24,37 @@ document.addEventListener('DOMContentLoaded', function () {
   }); // Dynamic relocation of elements on resize
 
   var dynamicAdaptElements = new DynamicAdapt('min');
-  dynamicAdaptElements.init(); // Promo slider init & options
+  dynamicAdaptElements.init(); // Donation calculator ans card highlight
+
+  var donationSumInput = document.querySelector('.donation-page #donation_sum');
+  var donationSum = document.getElementById('total_donation_sum');
+
+  if (donationSumInput) {
+    var donationCheckboxes = document.querySelectorAll('.child-card__checkbox .checkbox');
+    donationSumInput.addEventListener('input', function () {
+      var sum = donationSumInput.value;
+      donationSum.textContent = sum;
+
+      if (!sum) {
+        donationSum.textContent = 0;
+      }
+    });
+    donationCheckboxes.forEach(function (checkbox) {
+      checkbox.addEventListener('change', function () {
+        var articleCard = checkbox.parentElement.parentElement.parentElement;
+        articleCard.classList.toggle('_checked');
+        var sum = parseInt(donationSum.textContent);
+        var value = parseInt(checkbox.value);
+
+        if (donationSum.textContent) {
+          donationSum.textContent = sum + value;
+        } else {
+          donationSum.textContent = value;
+        }
+      });
+    });
+  } // Promo slider
+
 
   var promoSlider = new Swiper('.promo__slider', {
     autoHeight: true,
@@ -37,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  }); // Help slider init & options
+  }); // Help slider
 
   var helpSlider = new Swiper('.help-block__slider .swiper', {
     loop: true,
@@ -60,7 +90,34 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 25
       }
     }
-  }); // Child-page slider
+  }); // Donation slider
+
+  var donationSlider = new Swiper('.more-children__slider', {
+    perMove: 1,
+    slidesPerView: 1.1,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: '.more-children__next',
+      prevEl: '.more-children__prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.2
+      }
+    }
+  }); // Destroy donation slider on desktop
+
+  function destroyDonationSlider() {
+    var desktopRes = window.matchMedia('(min-width: 1024px)');
+
+    if (desktopRes.matches) {
+      donationSlider.destroy();
+    } else {
+      swiper.init(donationSlider);
+    }
+  }
+
+  destroyDonationSlider(); // Child-page slider
 
   var sliderThumbs = new Swiper('.slider__thumbs', {
     spaceBetween: 16,
