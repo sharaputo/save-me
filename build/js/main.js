@@ -28,15 +28,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var donationSumInput = document.querySelector('.donation-page #donation_sum');
   var donationSum = document.getElementById('total_donation_sum');
+  var checkboxesTotalSum = null;
 
   if (donationSumInput) {
     var donationCheckboxes = document.querySelectorAll('.child-card__checkbox .checkbox');
     donationSumInput.addEventListener('input', function () {
-      var sum = donationSumInput.value;
-      donationSum.textContent = sum;
+      var sum = parseInt(donationSumInput.value);
 
-      if (!sum) {
+      if (checkboxesTotalSum) {
+        donationSum.textContent = sum + checkboxesTotalSum;
+      } else {
+        donationSum.textContent = sum;
+      }
+
+      if (!sum && !checkboxesTotalSum) {
         donationSum.textContent = 0;
+      } else if (!sum && checkboxesTotalSum) {
+        donationSum.textContent = checkboxesTotalSum;
       }
     });
     donationCheckboxes.forEach(function (checkbox) {
@@ -46,10 +54,17 @@ document.addEventListener('DOMContentLoaded', function () {
         var sum = parseInt(donationSum.textContent);
         var value = parseInt(checkbox.value);
 
-        if (donationSum.textContent) {
-          donationSum.textContent = sum + value;
+        if (checkbox.checked) {
+          checkboxesTotalSum += value;
+
+          if (donationSum.textContent) {
+            donationSum.textContent = sum + value;
+          } else {
+            donationSum.textContent = value;
+          }
         } else {
-          donationSum.textContent = value;
+          checkboxesTotalSum -= value;
+          donationSum.textContent -= value;
         }
       });
     });
@@ -112,8 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (desktopRes.matches) {
       donationSlider.destroy();
-    } else {
-      swiper.init(donationSlider);
     }
   }
 
