@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }); // Donation slider
 
+  var moreChildrenSlider = document.querySelector('.more-children__slider');
   var donationSlider = new Swiper('.more-children__slider', {
     perMove: 1,
     slidesPerView: 1.1,
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function destroyDonationSlider() {
     var desktopRes = window.matchMedia('(min-width: 1024px)');
 
-    if (desktopRes.matches) {
+    if (desktopRes.matches && moreChildrenSlider) {
       donationSlider.destroy();
     }
   }
