@@ -3626,6 +3626,134 @@ body {
   padding: 8px 16px 16px;
 }
 
+/* Contacts Page */
+
+.contacts-page {
+  padding: 24px 0 48px;
+}
+
+.contacts-page__title {
+  margin-bottom: 24px;
+}
+
+.contacts-page__map {
+  padding-bottom: 89.7%;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.contacts-page__location {
+  margin-bottom: 16px;
+}
+
+.contacts-page__label {
+  font-size: 1.2rem;
+  color: #8a8989;
+  margin-bottom: 8px;
+}
+
+.contacts-page__phones {
+  margin-bottom: 8px;
+}
+
+.contacts-page__email + .contacts-page__label {
+  margin-top: 16px;
+}
+
+.contacts-page__form {
+  margin: 24px 0 48px;
+}
+
+.contacts-page__form .form__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 8px;
+}
+
+.contacts-page__form .form__info {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #55504f;
+  margin-bottom: 16px;
+}
+
+.contacts-page__form .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contacts-page__form .form__policy {
+  position: relative;
+  margin-top: 16px;
+}
+
+.contacts-page__form .form__policy .label {
+  font-size: 1.2rem;
+  color: #252120;
+  padding-left: 30px;
+}
+
+.contacts-page__form .form__policy .label::before {
+  top: calc(50% - 9px);
+}
+
+.contacts-page__form .form__policy .label::after {
+  top: 7px;
+  left: 5px;
+}
+
+.contacts-page__form .form__link {
+  color: #f34056;
+}
+
+.contacts-page__form .form__btn {
+  margin-top: 16px;
+}
+
+.contacts-page .breadcrumb {
+  margin-bottom: 16px;
+}
+
+.contacts-page .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  font-size: 1.7rem;
+}
+
+.contacts-page .row .icon {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 24px;
+      flex-basis: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.contacts-page .row .link {
+  color: #252120;
+}
+
+.contacts-page .address {
+  color: #252120;
+}
+
 /* Footer  */
 
 .footer {
@@ -4959,6 +5087,7 @@ body {
 
   .about-page .help-card {
     display: block;
+    padding: 32px 32px 47px;
   }
 
   .about-page .reports {
@@ -4977,6 +5106,78 @@ body {
 
   .about-page .spoiler__text {
     font-size: 1.7rem;
+  }
+
+  .contacts-page {
+    padding: 44px 0 75px;
+  }
+
+  .contacts-page__title {
+    margin-bottom: 16px;
+  }
+
+  .contacts-page__map {
+    padding-bottom: 40.7%;
+    margin-bottom: 16px;
+  }
+
+  .contacts-page__form {
+    margin: 16px 0 0;
+  }
+
+  .contacts-page__form .form__title {
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+  }
+
+  .contacts-page__form .form__inputs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .contacts-page__form .form__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  .contacts-page__form .form__policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 16px;
+  }
+
+  .contacts-page__form .form__btn {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 264px;
+        flex-basis: 264px;
+    margin-top: 0;
+  }
+
+  .contacts-page__aside {
+    padding-top: 47px;
+  }
+
+  .contacts-page .breadcrumb {
+    margin-bottom: 25px;
+  }
+
+  .contacts-page .address__metro {
+    display: block;
+  }
+
+  .contacts-page .help-card {
+    padding: 32px 32px 47px;
   }
 
   .footer__top {
@@ -5213,6 +5414,15 @@ body {
 
   .about-page .table {
     overflow: hidden;
+  }
+
+  .contacts-page__form .form {
+    padding: 32px;
+  }
+
+  .contacts-page__form .form__btn {
+    -ms-flex-preferred-size: 324px;
+        flex-basis: 324px;
   }
 
   .footer__links {
