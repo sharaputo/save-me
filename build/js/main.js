@@ -208,5 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  embedYoutube();
+  embedYoutube(); // Custom select script
+
+  customSelect('#payment_means');
 });
