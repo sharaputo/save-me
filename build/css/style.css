@@ -845,7 +845,7 @@ body {
 }
 
 .button--primary:focus {
-  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #f34056;
+  background-color: #c23345;
 }
 
 .button--secondary {
@@ -5825,7 +5825,7 @@ body {
 
 @media (hover: hover) {
   .button--primary:hover {
-    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #f34056;
+    background-color: #db3a4d;
   }
 
   .button--secondary:hover {
