@@ -292,7 +292,7 @@ ul li {
   font-family: 'Gals';
   font-style: normal;
   font-weight: 700;
-  src: local('Gals'), local('Gals-Bold'), url('../fonts/Gals-Bold.woff2') format('woff2'), url('../fonts/Gals-Bold.woff') format('woff');
+  src: local('Gals Bold'), local('Gals-Bold'), url('../fonts/Gals-Bold.woff2') format('woff2'), url('../fonts/Gals-Bold.woff') format('woff');
   font-display: swap;
 }
 
@@ -657,6 +657,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .fluid-img {
@@ -1734,7 +1736,10 @@ body {
 }
 
 .embed-youtube iframe {
-  width: 100%;
+  border-radius: 16px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  overflow: hidden;
 }
 
 .embed-youtube .heart-icon {
@@ -3329,15 +3334,15 @@ body {
 }
 
 .donation-page .child-card {
-  outline: 2px solid #ffffff;
-  -webkit-transition: background-color 0.1s ease-in-out, outline-color 0.1s ease-in-out;
-  -o-transition: background-color 0.1s ease-in-out, outline-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out, outline-color 0.1s ease-in-out;
+  border: 2px solid #ffffff;
+  -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
 }
 
 .donation-page .child-card._checked {
   background-color: #fff8f3;
-  outline-color: #ffab7c;
+  border-color: #ffab7c;
 }
 
 .donation-page .form-footer {
@@ -5385,6 +5390,13 @@ body {
   .contacts-page__map {
     padding-bottom: 40.7%;
     margin-bottom: 16px;
+  }
+
+  .contacts-page__map iframe {
+    -o-object-fit: unset;
+       object-fit: unset;
+    border-radius: 16px;
+    overflow: hidden;
   }
 
   .contacts-page__form {
