@@ -4791,6 +4791,7 @@ body {
     -ms-flex-preferred-size: 310px;
         flex-basis: 310px;
     margin: 0;
+    margin-left: auto;
   }
 
   .help-block {
