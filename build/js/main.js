@@ -1,7 +1,28 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Burger menu open & close
+  // Cookies handling
+  var cookiesPopup = document.getElementById('site_cookies');
+
+  if (cookiesPopup) {
+    var showCoolies = function showCoolies() {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= 50) {
+        cookiesPopup.classList.add('_shown');
+      }
+    };
+
+    var scrollpos = window.scrollY;
+    window.addEventListener('scroll', showCoolies);
+    var cookieDismiss = document.getElementById('cookies_dismiss');
+    cookieDismiss.addEventListener('click', function () {
+      cookiesPopup.classList.remove('_shown');
+      window.removeEventListener('scroll', showCoolies);
+    });
+  } // Burger menu open & close
+
+
   var burgerIcon = document.querySelector('.burger');
   var headerMenu = document.querySelector('#navigation');
 
