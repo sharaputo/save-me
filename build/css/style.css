@@ -5244,7 +5244,11 @@ body {
   }
 
   .news-item__cards {
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -5266,6 +5270,16 @@ body {
 
   .news-item .help-card {
     display: none;
+  }
+
+  .news-item .news-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 349px;
+        flex-basis: 349px;
   }
 
   .donation-page {
