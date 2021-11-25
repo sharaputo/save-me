@@ -4110,17 +4110,25 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-filter: drop-shadow(5px 15px 15px rgba(243, 64, 86, 0.48));
+          filter: drop-shadow(5px 15px 15px rgba(243, 64, 86, 0.48));
 }
 
 .not-found__icons::before {
-  width: 200px;
+  height: 60px;
+  width: 64px;
   top: 20px;
   left: 0;
 }
 
 .not-found__icons::after {
+  height: 48px;
+  width: 51px;
   top: 0;
   right: 0;
+  -webkit-transform: rotate(50deg);
+      -ms-transform: rotate(50deg);
+          transform: rotate(50deg);
 }
 
 .not-found__num {
@@ -4410,6 +4418,11 @@ body {
 
   .donation-page .tabs-block .online__option .label {
     padding: 16px;
+  }
+
+  .not-found__body {
+    max-width: 448px;
+    margin: 0 auto;
   }
 
   .footer__bottom .social-links {
@@ -5718,9 +5731,10 @@ body {
     padding: 44px 0 58px;
   }
 
-  .not-found__body {
-    max-width: 448px;
-    margin: 0 auto;
+  .not-found__icons {
+    height: 0;
+    width: 100%;
+    margin: 0;
   }
 
   .not-found__num {
