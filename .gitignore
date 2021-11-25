@@ -1,6 +1,10 @@
 .DS_Store
 .babelrc
-app/
+app/favicons
+app/fonts
+app/img
+app/js
+app/less
 node_modules/
 gulpfile.js
 package.json

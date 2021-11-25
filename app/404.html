@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Страница не найдена!</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  @@include('./components/_header.html')
+  <main class="main">
+    <section class="not-found">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__slash">/</span>
+              <a href="#!" class="breadcrumb__link breadcrumb__link--current">
+                404
+              </a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="not-found__body">
+          <div class="not-found__icons"></div>
+
+          <div class="not-found__num">404</div>
+
+          <h1 class="not-found__title">
+            Страница не существует
+            или находится в разработке
+          </h1>
+
+          <a href="#!" class="button button--primary not-found__link">Вернуться на главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('./components/home/_popup.html')
+  @@include('./components/_footer.html')
+
+  @@include('./components/_cookie.html')
+  <script src="js/libs/hystmodal.min.js"></script>
+  <script src="js/libs/bodyScrollLock.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/dynamic-adapt.js"></script>
+  <script src="js/libs/spoilers.js"></script>
+  <script src="js/libs/custom-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

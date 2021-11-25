@@ -4084,6 +4084,64 @@ body {
   padding: 32px;
 }
 
+/* 404 Page */
+
+.not-found {
+  padding: 24px 0 111px;
+}
+
+.not-found__body {
+  text-align: center;
+}
+
+.not-found__icons {
+  position: relative;
+  height: 94px;
+  width: 243px;
+  margin: 0 auto 42px;
+}
+
+.not-found__icons::before,
+.not-found__icons::after {
+  display: block;
+  content: '';
+  position: absolute;
+  background-image: url(../../img/popup-heart.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.not-found__icons::before {
+  width: ;
+  top: 20px;
+  left: 0;
+}
+
+.not-found__icons::after {
+  top: 0;
+  right: 0;
+}
+
+.not-found__num {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 8rem;
+  line-height: 1;
+  color: #252120;
+}
+
+.not-found__title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #252120;
+  margin-bottom: 32px;
+}
+
+.not-found .breadcrumb {
+  margin-bottom: 17px;
+}
+
 /* Footer  */
 
 .footer {
@@ -5656,6 +5714,32 @@ body {
     padding-bottom: 102%;
   }
 
+  .not-found {
+    padding: 44px 0 58px;
+  }
+
+  .not-found__body {
+    max-width: 448px;
+    margin: 0 auto;
+  }
+
+  .not-found__num {
+    font-size: 12rem;
+  }
+
+  .not-found__title {
+    font-size: 2.8rem;
+  }
+
+  .not-found__link {
+    display: inline-block;
+    max-width: 285px;
+  }
+
+  .not-found .breadcrumb {
+    margin-bottom: 14px;
+  }
+
   .footer__top {
     padding: 48px 0;
   }
@@ -5992,6 +6076,7 @@ body {
 }
 @supports (-webkit-appearance:none){
 .custom-select-container .custom-select-opener::after{background-image:url(../img/icons/shevron.svg)}
+.not-found__icons::before,.not-found__icons::after{background-image:url(../../img/popup-heart.webp)}
 }
 
  @media only screen and (min-width: 480px){

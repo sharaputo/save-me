@@ -1,0 +1,49 @@
+<div class="hystmodal" id="help_popup" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="help-popup hystmodal__window" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close"></button>
+
+      <div class="help-popup__body">
+        <div class="help-popup__icon">
+          <img src="../img/popup-heart.png" alt="heart icon">
+        </div>
+
+        <h2 class="help-popup__title">Регулярная помощь</h2>
+
+        <p class="help-popup__info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+          scelerisque
+          lobortis senectus lorem.
+        </p>
+
+        <form action="#!" class="help-popup__form form">
+
+          <div class="form__inputs">
+            <div class="form__input form__input--labeled">
+              <input type="text" id="popup_sum_input" class="input" value="500" maxlength="10"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+              <label for="popup_sum_input" class="form__label form__label--absolute">Руб/мес</label>
+            </div>
+            <div class="form__input">
+              <input type="email" id="popup_sum_input" class="input" placeholder="Email для чеков">
+              <label for="popup_sum_input" class="form__label screen-reader">Email для чеков</label>
+            </div>
+          </div>
+
+          <div class="form__policy">
+            <input type="checkbox" id="policy_checkbox" class="checkbox">
+            <label for="policy_checkbox" class="label checkbox-control">
+              Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+              <a href="#!" class="form__link">обработку
+                персональных данных</a>
+            </label>
+          </div>
+
+          <button type="submit" class="button button--primary form__btn">
+            Хочу помогать!
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,208 @@
+<section class="payments-section">
+  <div class="container">
+    <div class="tabs">
+      <div class="tabs__image ibg">
+        <img src="img/child-slide-test.jpg" alt="">
+        <div class="heart-icon">
+          <svg width="24" height="24">
+            <use xlink:href="#heart" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="tabs__body">
+        <h2 class="tabs__title">Помочь Камилле</h2>
+        <div class="tabs__label">Цель сбора</div>
+        <p class="tabs__info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="tabs-block">
+          <nav class="tabs-block__nav">
+            <a href="#online" class="tabs-block__link _active">Онлайн</a>
+            <a href="#sms" class="tabs-block__link">SMS</a>
+            <a href="#account" class="tabs-block__link">Реквизиты</a>
+          </nav>
+
+          <div class="tabs-block__panels">
+            <div class="tabs-block__panel _active" id="online">
+              <form action="#!" class="online">
+                <div class="online__step">
+                  <div class="number">1</div>
+                  <div class="title">Выберите способ онлайн оплаты</div>
+                </div>
+                <ul class="online__options" role="none">
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_mir">
+                    <label for="payment_mir" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#mir" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_visa">
+                    <label for="payment_visa" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#visa" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_yandex">
+                    <label for="payment_yandex" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#yandex" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_sber">
+                    <label for="payment_sber" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#sber" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_gpay">
+                    <label for="payment_gpay" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#gpay" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_applepay">
+                    <label for="payment_applepay" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#applepay" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_qiwi">
+                    <label for="payment_qiwi" class="label">
+                      <svg width="51" height="32">
+                        <use xlink:href="#qiwi" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li class="online__option">
+                    <input type="radio" name="payment_method" class="radio" id="payment_other">
+                    <label for="payment_other" class="label">
+                      <span>Другие</span>
+                    </label>
+                  </li>
+                </ul>
+
+                <div class="online__step">
+                  <div class="number">2</div>
+                  <label for="donation_sum" class="screen-reader">Сумма пожертвования</label>
+                  <input type="text" name="" class="input" id="donation_sum" placeholder="Сумма пожертвования"
+                    maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+
+                <div class="online__step">
+                  <div class="number">3</div>
+                  <label for="donation_email" class="screen-reader">Email для квитанции</label>
+                  <input type="email" name="" class="input" id="donation_email" placeholder="Email для квитанции">
+                </div>
+
+                <div class="online__policy">
+                  <div class="wrapper">
+                    <input type="checkbox" id="payment_policy_checkbox" class="checkbox">
+                    <label for="payment_policy_checkbox" class="label checkbox-control">
+                      Я принимаю условия <a href="#!" class="link">публичной оферты</a> и даю согласие на
+                      <a href="#!" class="link">обработку
+                        персональных данных</a>
+                    </label>
+                  </div>
+
+                  <button type="submit" class="button button--primary online__btn">Помочь!</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="tabs-block__panel" id="sms">
+              <div class="sms">
+                <p class="sms__title">
+                  Отправьте <span class="highlight">СМС</span> на номер <span class="highlight">3434</span> с текстом
+                  <span class="highlight">СПАСИ 200</span> (200 размер пожертвования).
+                </p>
+                <p class="sms__info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque adipiscing egestas felis viverra ut
+                  sit.
+                  Augue maecenas
+                  donec cras etiam dignissim euismod ipsum gravida. Rhoncus neque at phasellus fusce. Diam cras viverra
+                  eget pharetra,
+                  tellus tincidunt risus pellentesque. Aliquet habitasse eget tincidunt purus purus facilisi. Dis vitae
+                  sit iaculis lectus
+                  malesuada quis <a href="#!" class="link">vitae eget</a>.
+                </p>
+                <div class="sms__warning">
+                  <div class="age-restriction">
+                    <div class="age">16+</div>
+                    <div class="label">Возрастное ограничение</div>
+                  </div>
+                  <p class="warning">
+                    *Отправляя смс вы соглашаетесь с <a href="#!" class="link">публичной офертой</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-block__panel" id="account">
+              <div class="account">
+                <div class="account__title">Для перевода в рублях</div>
+                <div class="account__subtitle">
+                  Расчетный счет в <span class="highlight">Сбербанке</span>
+                </div>
+                <a href="#!" class="account__link" download="account.pdf">
+                  <svg width="12" height="16">
+                    <use xlink:href="#document" />
+                  </svg>
+                  <span>Реквизиты</span>
+                </a>
+                <div class="account__subtitle">
+                  Расчетный счет в <span class="highlight">Альфабанке</span>
+                </div>
+                <a href="#!" class="account__link" download="account.pdf">
+                  <svg width="12" height="16">
+                    <use xlink:href="#document" />
+                  </svg>
+                  <span>Реквизиты</span>
+                </a>
+
+                <div class="account__title">Для перевода в иностранной валюте</div>
+                <div class="account__subtitle">
+                  Расчетный счет в <span class="highlight">долларах США</span>
+                </div>
+                <a href="#!" class="account__link" download="account.pdf">
+                  <svg width="12" height="16">
+                    <use xlink:href="#document" />
+                  </svg>
+                  <span>Реквизиты</span>
+                </a>
+                <div class="account__subtitle">
+                  Расчетный счет в <span class="highlight">Евро</span>
+                </div>
+                <a href="#!" class="account__link" download="account.pdf">
+                  <svg width="12" height="16">
+                    <use xlink:href="#document" />
+                  </svg>
+                  <span>Реквизиты</span>
+                </a>
+
+                <p class="account__warning">
+                  Пожертвования можно сделать в любом банке и банкомате вашего города
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

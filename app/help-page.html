@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Кому помочь?</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  @@include('./components/_header.html')
+  <main class="main">
+    <section class="help-page">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="index.html" class="breadcrumb__link">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__slash">/</span>
+              <a href="#!" class="breadcrumb__link breadcrumb__link--current">
+                Кому помочь?
+              </a>
+            </li>
+          </ol>
+        </nav>
+
+        <h1 class="page-title help-page__title">Кому помочь?</h1>
+        <p class="help-page__info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis tristique nisi, donec mollis nisi sodales
+          cras
+          facilisis. Elit accumsan sed mauris vitae. Sed lectus nulla eget lobortis suspendisse mattis. Viverra diam
+          nulla nibh at
+          egestas sed enim nisl.
+        </p>
+
+        <!-- Промо карточка с ребёнком со срочным сбором -->
+        <article class="child-card child-card--promo">
+          <header class="child-card__header child-card__header--promo">
+            <div class="child-card__image child-card__image--promo ibg">
+              <!-- Фотография ребёнка -->
+              <img src="../img/child-photo.jpg" alt="" draggable="false">
+
+              <div class="heart-icon child-card__icon">
+                <svg width="24" height="24">
+                  <use xlink:href="#heart" />
+                </svg>
+              </div>
+
+              <!-- Плашка срочного сбора -->
+              <div class="child-card__urgent">
+                <div class="icon">
+                  <svg width="22" height="23">
+                    <use xlink:href="#hand" />
+                  </svg>
+                </div>
+                <div class="label">Срочный сбор</div>
+              </div>
+            </div>
+
+            <h3 class="child-card__title child-card__title--promo" data-da=".child-card__body, 1024, 1">
+              Камилла Габдуллина
+            </h3>
+            <div class="child-card__subtitle" data-da=".child-card__body, 1024, 2">4 года</div>
+          </header>
+
+          <div class="child-card__body">
+            <div class="child-card__goal child-card__goal--promo" data-da=".child-card__header, 1024, last">
+              <div class="goal">
+                <div class="goal__target">
+                  <div class="label">Необходимо</div>
+                  <div class="sum sum--promo">14 00 000</div>
+                </div>
+                <div class="goal__raised">
+                  <div class="label">Собрано</div>
+                  <div class="sum sum--promo">11 00 000</div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress__bar" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <!-- Информация о диагнозе и требованиях -->
+            <div class="child-card__info">
+              <div class="label">диагноз</div>
+              <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+            </div>
+            <div class="child-card__info required">
+              <div class="label">Требуется</div>
+              <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+            </div>
+
+            <!-- История -->
+            <div class="child-card__info story">
+              <div class="label">История</div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, <span class="red">consectetur</span> adipiscing elit. Nisl cursus nulla
+                tincidunt leo. <span class="underline">Viverra</span> nunc
+                scelerisque
+                lobortis senectus lorem. Nec enim aliquam <span class="grey">morbi ornare</span> faucibus. Egestas
+                sollicitudin eu varius nullam
+                fermentum et.
+                <a href="#!" class="link-more">Читать еще</a>
+              </p>
+            </div>
+
+            <div class="child-card__links">
+              <a href="#!" class="button button--primary child-card__help-link child-card__help-link--promo">
+                Помочь!
+              </a>
+              <a href="#!" class="button button--red child-card__about-link">О ребенке</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="help-page__cards">
+          <!-- Карточка с ребёнком -->
+          <article class="child-card">
+            <header class="child-card__header">
+              <div class="child-card__image ibg">
+                <!-- Фотография ребёнка -->
+                <img src="../img/child-photo.jpg" alt="" draggable="false">
+
+                <div class="heart-icon child-card__icon">
+                  <svg width="24" height="24">
+                    <use xlink:href="#heart" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="child-card__title">Камилла Габдуллина</h3>
+              <div class="child-card__subtitle">4 года</div>
+            </header>
+
+            <div class="child-card__body">
+              <div class="child-card__goal">
+                <div class="goal">
+                  <div class="goal__target">
+                    <div class="label">Необходимо</div>
+                    <div class="sum">14 00 000</div>
+                  </div>
+                  <div class="goal__raised">
+                    <div class="label">Собрано</div>
+                    <div class="sum">11 00 000</div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <!-- Информация о диагнозе и требованиях -->
+              <div class="child-card__info">
+                <div class="label">диагноз</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+              <div class="child-card__info required">
+                <div class="label">Требуется</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+
+              <a href="#!" class="button button--primary child-card__help-link">Помочь!</a>
+              <a href="#!" class="button button--red child-card__about-link">О ребенке</a>
+            </div>
+          </article>
+
+          <!-- Карточка призывающая отправить смс -->
+          <div class="message-card">
+            <div class="message-card__image ibg">
+              <img src="img/help-page/text-card-image.jpg" alt="">
+            </div>
+
+            <div class="message-card__body">
+              <h3 class="message-card__title">
+                Спасти жизнь ребенка - просто!
+              </h3>
+              <p class="message-card__info">
+                Отправьте <span class="highlight">СМС</span> на номер <span class="highlight">3434</span> с текстом
+                <span class="highlight">СПАСИ 200</span>(200 размер пожертвования).
+              </p>
+            </div>
+          </div>
+
+          <!-- Карточка с ребёнком -->
+          <article class="child-card">
+            <header class="child-card__header">
+              <div class="child-card__image ibg">
+                <!-- Фотография ребёнка -->
+                <img src="../img/child-photo.jpg" alt="" draggable="false">
+
+                <div class="heart-icon child-card__icon">
+                  <svg width="24" height="24">
+                    <use xlink:href="#heart" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="child-card__title">Камилла Габдуллина</h3>
+              <div class="child-card__subtitle">4 года</div>
+            </header>
+
+            <div class="child-card__body">
+              <div class="child-card__goal">
+                <div class="goal">
+                  <div class="goal__target">
+                    <div class="label">Необходимо</div>
+                    <div class="sum">14 00 000</div>
+                  </div>
+                  <div class="goal__raised">
+                    <div class="label">Собрано</div>
+                    <div class="sum">11 00 000</div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <!-- Информация о диагнозе и требованиях -->
+              <div class="child-card__info">
+                <div class="label">диагноз</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+              <div class="child-card__info required">
+                <div class="label">Требуется</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+
+              <a href="#!" class="button button--primary child-card__help-link">Помочь!</a>
+              <a href="#!" class="button button--red child-card__about-link">О ребенке</a>
+            </div>
+          </article>
+
+          <!-- Карточка с формой регулярной помощи -->
+          <div class="help-card">
+            <div class="help-card__icon">
+              <img src="../img/popup-heart.png" alt="heart icon">
+            </div>
+
+            <h3 class="help-card__title">Регулярная помощь</h3>
+
+            <p class="help-card__info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+              scelerisque
+              lobortis senectus lorem.
+            </p>
+
+            <form action="#!" class="help-card__form form">
+
+              <div class="form__inputs">
+                <div class="form__input form__input--labeled">
+                  <input type="text" id="popup_sum_input" class="input" value="500" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  <label for="popup_sum_input" class="form__label form__label--absolute">Руб/мес</label>
+                </div>
+                <div class="form__input">
+                  <input type="email" id="popup_sum_input" class="input" placeholder="Email для чеков">
+                  <label for="popup_sum_input" class="form__label screen-reader">Email для чеков</label>
+                </div>
+              </div>
+
+              <button type="submit" class="button button--primary form__btn">
+                Хочу помогать!
+              </button>
+
+              <div class="form__policy">
+                <input type="checkbox" id="policy_checkbox" class="checkbox">
+                <label for="policy_checkbox" class="label checkbox-control">
+                  Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+                  <a href="#!" class="form__link">обработку
+                    персональных данных</a>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <!-- Карточка с ребёнком -->
+          <article class="child-card">
+            <header class="child-card__header">
+              <div class="child-card__image ibg">
+                <!-- Фотография ребёнка -->
+                <img src="../img/child-photo.jpg" alt="" draggable="false">
+
+                <div class="heart-icon child-card__icon">
+                  <svg width="24" height="24">
+                    <use xlink:href="#heart" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="child-card__title">Камилла Габдуллина</h3>
+              <div class="child-card__subtitle">4 года</div>
+            </header>
+
+            <div class="child-card__body">
+              <div class="child-card__goal">
+                <div class="goal">
+                  <div class="goal__target">
+                    <div class="label">Необходимо</div>
+                    <div class="sum">14 00 000</div>
+                  </div>
+                  <div class="goal__raised">
+                    <div class="label">Собрано</div>
+                    <div class="sum">11 00 000</div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="progress__bar" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <!-- Информация о диагнозе и требованиях -->
+              <div class="child-card__info">
+                <div class="label">диагноз</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+              <div class="child-card__info required">
+                <div class="label">Требуется</div>
+                <p class="text">Neque montes nunc quis faucibus enim vel at.</p>
+              </div>
+
+              <a href="#!" class="button button--primary child-card__help-link">Помочь!</a>
+              <a href="#!" class="button button--red child-card__about-link">О ребенке</a>
+            </div>
+          </article>
+        </div>
+
+        <button type="button" class="button button--secondary help-page__more">Показать еще</button>
+      </div>
+    </section>
+  </main>
+  @@include('./components/home/_popup.html')
+  @@include('./components/_footer.html')
+  <script src="js/libs/hystmodal.min.js"></script>
+  <script src="js/libs/bodyScrollLock.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/dynamic-adapt.js"></script>
+  <script src="js/libs/spoilers.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

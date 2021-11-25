@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Новости</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  @@include('./components/_header.html')
+  <main class="main">
+    <section class="news-page">
+      <div class="container container--flex">
+        <div class="news-page__body page-body">
+          <nav class="aside-menu" data-da=".news-page__aside, 1024, first">
+            <div class="aside-menu__slider">
+              <a href="#!" class="aside-menu__link">О фонде</a>
+              <a href="#!" class="aside-menu__link">Миссия</a>
+              <a href="#!" class="aside-menu__link _active">Новости</a>
+              <a href="#!" class="aside-menu__link">Документы</a>
+              <a href="#!" class="aside-menu__link">Отчеты</a>
+              <a href="#!" class="aside-menu__link">Реквизиты</a>
+              <a href="#!" class="aside-menu__link">Контакты</a>
+            </div>
+          </nav>
+
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__slash">/</span>
+                <a href="#!" class="breadcrumb__link breadcrumb__link--current">
+                  Новости
+                </a>
+              </li>
+            </ol>
+          </nav>
+
+          <h1 class="page-title news-page__title">Новости</h1>
+
+          <p class="news-page__info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis tristique nisi, donec mollis nisi sodales
+            cras
+            facilisis. Elit accumsan sed mauris vitae. Sed lectus nulla eget lobortis suspendisse mattis. Viverra diam
+            nulla nibh at
+            egestas sed enim nisl.
+          </p>
+
+          <div class="news-page__cards">
+            <!-- Карточка статьи -->
+            <article class="news-card">
+              <a href="#!" class="news-card__link">
+                <header class="news-card__header">
+                  <div class="news-card__image ibg">
+                    <!-- Фотография новости -->
+                    <img src="../img/news-photo.jpg" alt="" draggable="false">
+                    <div class="heart-icon news-card__icon">
+                      <svg width="24" height="24">
+                        <use xlink:href="#heart" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="news-card__date">12.12.2021 09:45</div>
+                </header>
+
+                <div class="news-card__body">
+                  <h3 class="news-card__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate
+                  </h3>
+                  <p class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate lobortis ornare
+                    quis sit.
+                    Vulputate
+                    ultricies pretium.
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Карточка статьи -->
+            <article class="news-card">
+              <a href="#!" class="news-card__link">
+                <header class="news-card__header">
+                  <div class="news-card__image ibg">
+                    <!-- Фотография новости -->
+                    <img src="../img/news-photo.jpg" alt="" draggable="false">
+                    <div class="heart-icon news-card__icon">
+                      <svg width="24" height="24">
+                        <use xlink:href="#heart" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="news-card__date">12.12.2021 09:45</div>
+                </header>
+
+                <div class="news-card__body">
+                  <h3 class="news-card__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate
+                  </h3>
+                  <p class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate lobortis ornare
+                    quis sit.
+                    Vulputate
+                    ultricies pretium.
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="news-page__form">
+            <form action="#!" class="subscription-form">
+              <p class="subscription-form__info">
+                В большом потоке информации сложно не упустить что-то важное. Оформите подписку, и вы первыми узнаете: о
+                срочных сборах
+                тяжелобольным детям, о благотворительных акциях и мероприятиях, об успехах наших подопечных.
+              </p>
+
+              <div class="subscription-form__content">
+                <label for="news_subscribe" class="screen-reader">Ваш email</label>
+                <input type="email" class="subscription-form__input" id="news_subscribe" placeholder="Ваш email">
+                <button type="submit" class="button button--secondary subscription-form__submit">
+                  Подписаться на новости
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="news-page__cards">
+            <!-- Карточка статьи -->
+            <article class="news-card">
+              <a href="#!" class="news-card__link">
+                <header class="news-card__header">
+                  <div class="news-card__image ibg">
+                    <!-- Фотография новости -->
+                    <img src="../img/news-photo.jpg" alt="" draggable="false">
+                    <div class="heart-icon news-card__icon">
+                      <svg width="24" height="24">
+                        <use xlink:href="#heart" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="news-card__date">12.12.2021 09:45</div>
+                </header>
+
+                <div class="news-card__body">
+                  <h3 class="news-card__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate
+                  </h3>
+                  <p class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate lobortis ornare
+                    quis sit.
+                    Vulputate
+                    ultricies pretium.
+                  </p>
+                </div>
+              </a>
+            </article>
+
+            <!-- Карточка с формой регулярной помощи -->
+            <div class="help-card" data-da=".news-page__aside, 1024, last">
+              <div class="help-card__icon">
+                <img src="../img/popup-heart.png" alt="heart icon">
+              </div>
+
+              <h3 class="help-card__title">Регулярная помощь</h3>
+
+              <p class="help-card__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+                scelerisque
+                lobortis senectus lorem.
+              </p>
+
+              <form action="#!" class="help-card__form form">
+
+                <div class="form__inputs">
+                  <div class="form__input form__input--labeled">
+                    <input type="text" id="popup_sum_input" class="input" value="500" maxlength="10"
+                      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <label for="popup_sum_input" class="form__label form__label--absolute">Руб/мес</label>
+                  </div>
+                  <div class="form__input">
+                    <input type="email" id="popup_sum_input" class="input" placeholder="Email для чеков">
+                    <label for="popup_sum_input" class="form__label screen-reader">Email для чеков</label>
+                  </div>
+                </div>
+
+                <button type="submit" class="button button--primary form__btn">
+                  Хочу помогать!
+                </button>
+
+                <div class="form__policy">
+                  <input type="checkbox" id="policy_checkbox" class="checkbox">
+                  <label for="policy_checkbox" class="label checkbox-control">
+                    Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+                    <a href="#!" class="form__link">обработку
+                      персональных данных</a>
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <!-- Карточка статьи -->
+            <article class="news-card">
+              <a href="#!" class="news-card__link">
+                <header class="news-card__header">
+                  <div class="news-card__image ibg">
+                    <!-- Фотография новости -->
+                    <img src="../img/news-photo.jpg" alt="" draggable="false">
+                    <div class="heart-icon news-card__icon">
+                      <svg width="24" height="24">
+                        <use xlink:href="#heart" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="news-card__date">12.12.2021 09:45</div>
+                </header>
+
+                <div class="news-card__body">
+                  <h3 class="news-card__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate
+                  </h3>
+                  <p class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu, donec vulputate lobortis ornare
+                    quis sit.
+                    Vulputate
+                    ultricies pretium.
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <button type="button" class="button button--secondary news-page__btn">
+            Еще новости
+          </button>
+        </div>
+
+        <aside class="news-page__aside page-aside">
+        </aside>
+      </div>
+    </section>
+  </main>
+  @@include('./components/home/_popup.html')
+  @@include('./components/_footer.html')
+  <script src="js/libs/hystmodal.min.js"></script>
+  <script src="js/libs/bodyScrollLock.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/dynamic-adapt.js"></script>
+  <script src="js/libs/spoilers.js"></script>
+  <script src="js/libs/custom-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Поступления</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  @@include('./components/_header.html')
+  <main class="main">
+    <section class="incomes-page">
+      <div class="container container--flex">
+        <div class="incomes-page__body page-body">
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__slash">/</span>
+                <a href="#!" class="breadcrumb__link breadcrumb__link--current">
+                  Поступления
+                </a>
+              </li>
+            </ol>
+          </nav>
+
+          <h1 class="page-title incomes-page__title">Поступления</h1>
+
+          <p class="incomes-page__info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id quis tristique nisi, donec mollis nisi sodales
+            cras
+            facilisis. Elit <a href="#!">accumsan</a> sed mauris vitae. Sed lectus nulla eget lobortis suspendisse
+            mattis. Viverra diam
+            nulla nibh at
+            egestas sed enim nisl.
+          </p>
+
+          <!-- Форма поиска -->
+          <div class="incomes-page__search">
+            <form action="#!" class="card form">
+              <h2 class="form__title">Найдите свое пожертвование</h2>
+
+              <div class="form__inputs">
+                <div class="form__input">
+                  <select name="payment_means_select" id="payment_means">
+                    <option value="">Способ оплаты</option>
+                    <option value="online">Online</option>
+                    <option value="sms">SMS</option>
+                    <option value="account">Реквизиты</option>
+                  </select>
+
+                  <label for="payment_means" class="screen-reader">Способ оплаты</label>
+                </div>
+
+                <div class="form__input">
+                  <input type="email" id="payment_email" class="input input--short" placeholder="Ваше email">
+                  <label for="payment_email" class="screen-reader">Ваше email</label>
+                  <button type="submit" class="form__btn">
+                    <svg width="12" height="13">
+                      <use xlink:href="#search" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <ul class="incomes-page__cards">
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+          </ul>
+
+          <!-- Форма подписки -->
+          <form action="#!" class="subscription-form">
+            <p class="subscription-form__info">
+              В большом потоке информации сложно не упустить что-то важное. Оформите подписку, и вы первыми узнаете: о
+              срочных сборах
+              тяжелобольным детям, о благотворительных акциях и мероприятиях, об успехах наших подопечных.
+            </p>
+
+            <div class="subscription-form__content">
+              <label for="news_subscribe" class="screen-reader">Ваш email</label>
+              <input type="email" class="subscription-form__input" id="news_subscribe" placeholder="Ваш email">
+              <button type="submit" class="button button--secondary subscription-form__submit">
+                Подписаться на новости
+              </button>
+            </div>
+          </form>
+
+          <ul class="incomes-page__cards">
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+            <li class="card incomes-page__card">
+              <div class="card__header">
+                <div class="card__date">12.12.2021</div>
+                <div class="card__info">*****@gmail.com</div>
+              </div>
+              <div class="card__sum">1 000 000 ₽</div>
+              <div class="card__means">Банковская карта</div>
+            </li>
+          </ul>
+
+          <!-- Карточка в сайдбаре с детьми -->
+          <div class="card saved-children" data-da=".incomes-page__aside, 1024, first">
+            <div class="saved-children__icon">
+              <img src="../img/popup-heart.png" alt="heart icon">
+            </div>
+
+            <h2 class="saved-children__title">Вы помогли детям!</h2>
+
+            <ul class="saved-children__list" role="none">
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+              <li class="saved-children__item ibg">
+                <img src="img/child-photo.jpg" alt="">
+              </li>
+            </ul>
+
+            <a href="#!" class="button button--secondary saved-children__link">
+              Все спасенные дети
+            </a>
+          </div>
+
+          <!-- Карточка с формой регулярной помощи -->
+          <div class="help-card" data-da=".incomes-page__aside, 1024, last">
+            <div class="help-card__icon">
+              <img src="../img/popup-heart.png" alt="heart icon">
+            </div>
+
+            <h3 class="help-card__title">Регулярная помощь</h3>
+
+            <p class="help-card__info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+              scelerisque
+              lobortis senectus lorem.
+            </p>
+
+            <form action="#!" class="help-card__form form">
+
+              <div class="form__inputs">
+                <div class="form__input form__input--labeled">
+                  <input type="text" id="popup_sum_input" class="input" value="500" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  <label for="popup_sum_input" class="form__label form__label--absolute">Руб/мес</label>
+                </div>
+                <div class="form__input">
+                  <input type="email" id="popup_sum_input" class="input" placeholder="Email для чеков">
+                  <label for="popup_sum_input" class="form__label screen-reader">Email для чеков</label>
+                </div>
+              </div>
+
+              <button type="submit" class="button button--primary form__btn">
+                Хочу помогать!
+              </button>
+
+              <div class="form__policy">
+                <input type="checkbox" id="policy_checkbox" class="checkbox">
+                <label for="policy_checkbox" class="label checkbox-control">
+                  Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+                  <a href="#!" class="form__link">обработку
+                    персональных данных</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <aside class="incomes-page__aside page-aside"></aside>
+      </div>
+    </section>
+  </main>
+  @@include('./components/home/_popup.html')
+  @@include('./components/_footer.html')
+  <script src="js/libs/hystmodal.min.js"></script>
+  <script src="js/libs/bodyScrollLock.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/dynamic-adapt.js"></script>
+  <script src="js/libs/spoilers.js"></script>
+  <script src="js/libs/custom-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

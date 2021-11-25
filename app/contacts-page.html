@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Контакты</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  @@include('./components/_header.html')
+  <main class="main">
+    <section class="contacts-page">
+      <div class="container container--flex">
+        <div class="contacts-page__body page-body">
+          <nav class="aside-menu" data-da=".contacts-page__aside, 1024, first">
+            <div class="aside-menu__slider">
+              <a href="#!" class="aside-menu__link">О фонде</a>
+              <a href="#!" class="aside-menu__link">Миссия</a>
+              <a href="#!" class="aside-menu__link">Новости</a>
+              <a href="#!" class="aside-menu__link">Документы</a>
+              <a href="#!" class="aside-menu__link">Отчеты</a>
+              <a href="#!" class="aside-menu__link">Реквизиты</a>
+              <a href="#!" class="aside-menu__link _active">Контакты</a>
+            </div>
+          </nav>
+
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="index.html" class="breadcrumb__link">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__slash">/</span>
+                <a href="#!" class="breadcrumb__link breadcrumb__link--current">
+                  Контакты
+                </a>
+              </li>
+            </ol>
+          </nav>
+
+          <h1 class="page-title contacts-page__title">Контакты</h1>
+
+          <div class="contacts-page__map ibg">
+            <a href="https://yandex.com.tr/harita/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint‑Petersburg</a>
+            <a href="https://yandex.com.tr/harita/2/saint-petersburg/house/3_ya_krasnoarmeyskaya_ulitsa_8v/Z0kYdQZkTkECQFtjfXVwdX5gZQ==/?ll=30.314746%2C59.914232&utm_medium=mapframe&utm_source=maps&z=16"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex.Maps: Transportation, navigation,
+              location
+              search</a>
+            <iframe src="https://yandex.com.tr/map-widget/v1/-/CCUumZfcSC?lang=ru_RU" width="560" height="400"
+              frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+
+          <div class="row contacts-page__location">
+            <div class="icon">
+              <svg width="18" height="21">
+                <use xlink:href="#location" />
+              </svg>
+            </div>
+            <address class="address">
+              190005, Санкт-Петербург, ул. 3-я Красноармейская, д. 8, лит. В
+              <span class="address__metro">(ст. м. «Технологический институт»)</span>
+            </address>
+          </div>
+
+          <div class="contacts-page__label">Бухгалтерия</div>
+
+          <div class="row contacts-page__phones">
+            <div class="icon">
+              <svg width="20" height="21">
+                <use xlink:href="#phone" />
+              </svg>
+            </div>
+            <div class="phones">
+              <a href="tel:88002008432" class="link">8 (800) 200-84-32</a>,
+              <a href="tel:88126798393" class="link">8 (812) 679-83-93</a>
+            </div>
+          </div>
+          <div class="row contacts-page__email">
+            <div class="icon">
+              <svg width="20" height="19">
+                <use xlink:href="#email" />
+              </svg>
+            </div>
+            <a href="mailto:help@mail.ru" class="link">help@mail.ru</a>
+          </div>
+
+          <div class="contacts-page__label">Волонтеры</div>
+
+          <div class="row contacts-page__phones">
+            <div class="icon">
+              <svg width="20" height="21">
+                <use xlink:href="#phone" />
+              </svg>
+            </div>
+            <div class="phones">
+              <a href="tel:88002008432" class="link">8 (800) 200-84-32</a>,
+              <a href="tel:88126798393" class="link">8 (812) 679-83-93</a>
+            </div>
+          </div>
+          <div class="row contacts-page__email">
+            <div class="icon">
+              <svg width="20" height="19">
+                <use xlink:href="#email" />
+              </svg>
+            </div>
+            <a href="mailto:help@mail.ru" class="link">help@mail.ru</a>
+          </div>
+
+          <div class="contacts-page__form">
+            <form action="#!" class="card form">
+              <h2 class="form__title">Напишите нам</h2>
+              <p class="form__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+                scelerisque
+                lobortis senectus lorem.
+              </p>
+
+              <div class="form__inputs">
+                <div class="form__input">
+                  <input type="text" id="contact_details" class="input" placeholder="Email или телефон">
+                  <label for="contact_details" class="form__label screen-reader">Email или телефон</label>
+                </div>
+                <div class="form__input">
+                  <input type="text" id="contact_name" class="input" placeholder="Ваше имя">
+                  <label for="contact_name" class="form__label screen-reader">Ваше имя</label>
+                </div>
+              </div>
+
+              <div class="form__text">
+                <textarea id="contact_message" class="input" rows="1" cols="1" placeholder="Сообщение"></textarea>
+                <label for="contact_message" class="form__label screen-reader">Сообщение</label>
+              </div>
+
+              <div class="form__policy">
+                <div class="policy">
+                  <input type="checkbox" id="contact_policy_checkbox" class="checkbox">
+                  <label for="contact_policy_checkbox" class="label checkbox-control">
+                    Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+                    <a href="#!" class="form__link">обработку
+                      персональных данных</a>
+                  </label>
+                </div>
+
+                <button type="submit" class="button button--primary form__btn">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Карточка с формой регулярной помощи -->
+          <div class="help-card" data-da=".contacts-page__aside, 1024, last">
+            <div class="help-card__icon">
+              <img src="../img/popup-heart.png" alt="heart icon">
+            </div>
+
+            <h3 class="help-card__title">Регулярная помощь</h3>
+
+            <p class="help-card__info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl cursus nulla tincidunt leo. Viverra nunc
+              scelerisque
+              lobortis senectus lorem.
+            </p>
+
+            <form action="#!" class="help-card__form form">
+
+              <div class="form__inputs">
+                <div class="form__input form__input--labeled">
+                  <input type="text" id="popup_sum_input" class="input" value="500" maxlength="10"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  <label for="popup_sum_input" class="form__label form__label--absolute">Руб/мес</label>
+                </div>
+                <div class="form__input">
+                  <input type="email" id="popup_sum_input" class="input" placeholder="Email для чеков">
+                  <label for="popup_sum_input" class="form__label screen-reader">Email для чеков</label>
+                </div>
+              </div>
+
+              <button type="submit" class="button button--primary form__btn">
+                Хочу помогать!
+              </button>
+
+              <div class="form__policy">
+                <input type="checkbox" id="policy_checkbox" class="checkbox">
+                <label for="policy_checkbox" class="label checkbox-control">
+                  Я принимаю условия <a href="#!" class="form__link">публичной оферты</a> и даю согласие на
+                  <a href="#!" class="form__link">обработку
+                    персональных данных</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <aside class="contacts-page__aside page-aside"></aside>
+      </div>
+    </section>
+  </main>
+  @@include('./components/home/_popup.html')
+  @@include('./components/_footer.html')
+  <script src="js/libs/hystmodal.min.js"></script>
+  <script src="js/libs/bodyScrollLock.min.js"></script>
+  <script src="js/libs/swiper-bundle.min.js"></script>
+  <script src="js/libs/dynamic-adapt.js"></script>
+  <script src="js/libs/spoilers.js"></script>
+  <script src="js/libs/custom-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
