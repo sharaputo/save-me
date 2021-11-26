@@ -4844,7 +4844,7 @@ body {
   }
 
   .need-help .child-card {
-    max-width: 349px;
+    max-width: 344px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
