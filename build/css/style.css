@@ -2105,6 +2105,20 @@ body {
   margin-bottom: 24px;
 }
 
+.news-block__form {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.news-block__form._hidden {
+  height: 0;
+  opacity: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  pointer-events: none;
+}
+
 .news-block__cards {
   display: -webkit-box;
   display: -ms-flexbox;
