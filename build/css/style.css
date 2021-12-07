@@ -1314,6 +1314,56 @@ body {
   z-index: 2;
 }
 
+.confirm-popup {
+  padding: 32px 16px;
+}
+
+.confirm-popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.confirm-popup .confirm-icon {
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 171, 124, 0.1);
+  border-radius: 16px;
+}
+
+.confirm-popup .title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #252120;
+}
+
+.confirm-popup .message {
+  font-size: 1.7rem;
+  padding-bottom: 24px;
+}
+
+.confirm-popup .confirm {
+  max-width: 300px;
+}
+
+.confirm-popup .cancel {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #8a8989;
+}
+
 .cookie {
   position: fixed;
   right: 15px;
@@ -1483,6 +1533,56 @@ body {
 .custom-select-container .custom-select-option.is-selected {
   color: #f34056;
   cursor: default;
+}
+
+.fail-popup {
+  padding: 32px 16px;
+}
+
+.fail-popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.fail-popup .fail-icon {
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.fail-popup .title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #252120;
+}
+
+.fail-popup .error {
+  font-size: 1.7rem;
+  padding-bottom: 24px;
+}
+
+.fail-popup .retry {
+  max-width: 300px;
+}
+
+.fail-popup .cancel {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #8a8989;
 }
 
 .heart-icon {
@@ -1725,6 +1825,40 @@ body {
 
 .news-card__text {
   color: #55504f;
+}
+
+.success-popup {
+  padding: 32px 16px;
+}
+
+.success-popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.success-popup .success-icon {
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(64, 165, 72, 0.1);
+  border-radius: 16px;
+}
+
+.success-popup .title {
+  font-family: 'Intro Regular', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #252120;
 }
 
 .subscription-form {
@@ -4613,6 +4747,20 @@ body {
     font-size: 2.4rem;
   }
 
+  .confirm-popup {
+    min-width: 623px;
+    padding: 64px 32px;
+  }
+
+  .confirm-popup__body {
+    max-width: 408px;
+    margin: 0 auto;
+  }
+
+  .confirm-popup .title {
+    font-size: 3.6rem;
+  }
+
   .cookie__body {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -4649,6 +4797,20 @@ body {
     gap: 24px;
   }
 
+  .fail-popup {
+    min-width: 623px;
+    padding: 64px 32px;
+  }
+
+  .fail-popup__body {
+    max-width: 408px;
+    margin: 0 auto;
+  }
+
+  .fail-popup .title {
+    font-size: 3.6rem;
+  }
+
   .message-card {
     padding: 32px;
   }
@@ -4671,6 +4833,20 @@ body {
 
   .news-card__text {
     font-size: 1.7rem;
+  }
+
+  .success-popup {
+    min-width: 623px;
+    padding: 64px 32px;
+  }
+
+  .success-popup__body {
+    max-width: 498px;
+    margin: 0 auto;
+  }
+
+  .success-popup .title {
+    font-size: 3.6rem;
   }
 
   .subscription-form__info {
